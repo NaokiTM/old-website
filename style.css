@@ -2,7 +2,9 @@ body {
     font-family: monospace;
     font-size: 20px;
     text-align: center;
-    background-color:#FFDEAD;
+    background-color: black;
+    /* background-color:#FFDEAD; */
+    animation: text 10s linear infinite;
 }
 
 #titlemarquee {
@@ -10,17 +12,21 @@ body {
 }
 
 a:link {
-    color: black;
+    animation: text 10s linear infinite;
     text-decoration: none;
 }
 
+.links {
+    animation: text 10s linear infinite;
+}
+
 a:visited {
-    color: black;
+    color:rgb(255, 102, 0);
     text-decoration: underline;
 }
 
 a:hover {
-    color: black;
+    color:rgb(255, 102, 0);
     text-decoration: underline;
 }
 
@@ -30,4 +36,42 @@ a:hover {
 
 #linuxdesc {
     text-align: left;
+}
+
+main {
+    animation: text 10s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: lime;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    100% {
+        color: red
+    }
+
+    /* 0% {
+        color: rgb(255, 102, 0);
+    }
+
+    50% {
+        color: black
+    }
+
+    100% {
+        color: rgb(255, 102, 0);
+    } */
+}
+
+.spacers {
+    display: inline-block;
 }
