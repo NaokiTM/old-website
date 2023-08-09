@@ -1,10 +1,28 @@
 body {
-    font-family: monospace;
-    font-size: 20px;
+    /* position: relative; cannot be used since it will be related to its child*/
     text-align: center;
-    background-color: black;
-    /* background-color:#FFDEAD; */
+    justify-content: center;
+    background-size:cover;
+}
+body::before {
+    content:"";
+    background-image: url("https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(54)(164).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    filter: brightness(10%);
+}
+
+#text {
+    position: relative;
     animation: text 10s linear infinite;
+    font-size: 20px;
+    font-family: monospace;
 }
 
 #titlemarquee {
@@ -21,12 +39,10 @@ a:link {
 }
 
 a:visited {
-    color:rgb(255, 102, 0);
     text-decoration: underline;
 }
 
 a:hover {
-    color:rgb(255, 102, 0);
     text-decoration: underline;
 }
 
@@ -38,8 +54,8 @@ a:hover {
     text-align: left;
 }
 
-main {
-    animation: text 10s linear infinite;
+#linkcontainer {
+    position: relative;
 }
 
 @keyframes text {
@@ -73,5 +89,18 @@ main {
 }
 
 .spacers {
-    display: inline-block;
-}
+   display: inline-block;
+} 
+
+/* #background {
+    content: "";
+    position: absolute ;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(54)(164).jpg");
+    background-size: cover;
+    filter: brightness(10%);
+    display: flex;
+} */
