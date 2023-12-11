@@ -1,2 +1,3 @@
-# NaokisiteV2
-Naokisite, but with a V2 engine
+# profile_site
+this is my website, which i will implement a way to showcase my projects on
+
